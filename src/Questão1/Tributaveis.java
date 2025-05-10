@@ -1,5 +1,5 @@
 package Questão1;
 
-public interface Tributaveis {
+ interface Tributaveis {
     double GerarValorImposto();
 }

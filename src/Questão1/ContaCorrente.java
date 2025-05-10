@@ -1,5 +1,7 @@
 package Questão1;
 
-public class ContaCorrente {
+ class ContaCorrente {
 
+    public ContaCorrente(int i) {
+    }
 }
