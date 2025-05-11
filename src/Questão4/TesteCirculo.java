@@ -13,11 +13,11 @@ public class TesteCirculo {
         int contador = 0;
         while (contador < quantidade) {
             try {
-                System.out.print("Digite o raio do círculo " + (contador + 1) + ": ");
+                System.out.print("Digite o raio do circulo " + (contador + 1) + ": ");
                 double raio = scanner.nextDouble();
 
                 if (raio < 0) {
-                    throw new IllegalArgumentException("Raio não pode ser negativo.");
+                    throw new IllegalArgumentException("Raio não pode ser negativo");
                 }
 
                 Circulo circulo = new Circulo(raio);
@@ -25,7 +25,7 @@ public class TesteCirculo {
                 contador++;
 
             } catch (InputMismatchException e) {
-                System.out.println("Entrada inválida! Digite um número válido.");
+                System.out.println("Entrada invalida Digite um numero valido");
                 scanner.nextLine();
             } catch (IllegalArgumentException e) {
                 System.out.println("Erro: " + e.getMessage());

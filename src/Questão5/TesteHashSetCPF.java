@@ -10,9 +10,6 @@ public class TesteHashSetCPF {
         Scanner teclado = new Scanner(System.in);
         Set<Integer> cpfs = new HashSet<>();
         int quantidade = 10;
-
-        System.out.printf("Digite %d CPFs (somente números inteiros):\n", quantidade);
-
         int tentativas = 0;
         while (tentativas < quantidade) {
             try {
@@ -20,7 +17,7 @@ public class TesteHashSetCPF {
                 int cpf = teclado.nextInt();
 
                 if (cpf < 0) {
-                    throw new IllegalArgumentException("CPF não pode ser negativo.");
+                    throw new IllegalArgumentException("CPF não pode ser negativo");
                 }
 
                 cpfs.add(cpf);
@@ -35,11 +32,9 @@ public class TesteHashSetCPF {
             }
         }
 
-        System.out.println("\n=== CPFs únicos armazenados no HashSet ===");
+        System.out.println("\nCPFs:");
         for (Integer cpf : cpfs) {
             System.out.println(cpf);
         }
-
-        teclado.close();
     }
 }

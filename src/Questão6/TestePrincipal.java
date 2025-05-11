@@ -9,7 +9,7 @@ public class TestePrincipal {
            String entradaConjunto = teclado.nextLine();
 
            if (entradaConjunto == null || entradaConjunto.trim().isEmpty()) {
-               throw new ConjuntoVazioException("O conjunto de palavras não pode estar vazio.");
+               throw new ConjuntoVazioException("O conjunto de palavras não pode estar vazio");
            }
 
            ConjuntodePalavras conjunto = new ConjuntodePalavras(entradaConjunto);
@@ -18,13 +18,13 @@ public class TestePrincipal {
            String entradaVerificar = teclado.nextLine();
 
            if (entradaVerificar == null || entradaVerificar.trim().isEmpty()) {
-               throw new ConjuntoVazioException("A string de verificação não pode estar vazia.");
+               throw new ConjuntoVazioException("A string de verificação não pode estar vazia");
            }
 
            if (conjunto.contemTodas(entradaVerificar)) {
-               System.out.println("Todas as palavras estão no conjunto.");
+               System.out.println("Todas as palavras estão no conjunto");
            } else {
-               System.out.println("Nem todas as palavras estão no conjunto.");
+               System.out.println("Nem todas as palavras estão no conjunto");
            }
 
        } catch (ConjuntoVazioException e) {

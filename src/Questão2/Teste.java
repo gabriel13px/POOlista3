@@ -64,7 +64,7 @@ public class Teste {
                     }
                     break;
                 } catch (InputMismatchException e) {
-                    System.out.println("Entrada invalida, use apenas numeros.");
+                    System.out.println("Entrada invalida use apenas numeros");
                     scanner.nextLine();
                 }
             }

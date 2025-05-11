@@ -16,7 +16,7 @@ public class TesteTributavel {
             double valorSaque = scanner.nextDouble();
             conta.Sacar(valorSaque);
 
-            System.out.print("Informe o valor para depósito: ");
+            System.out.print("Informe o valor para deposito: ");
             double valorDeposito = scanner.nextDouble();
             conta.Depositar(valorDeposito);
 
@@ -29,11 +29,9 @@ public class TesteTributavel {
         } catch (ValorInvalidoException e) {
             System.out.println("Erro de valor: " + e.getMessage());
         } catch (InputMismatchException e) {
-            System.out.println("Erro: Entrada inválida, digite apenas números.");
+            System.out.println("Erro: Entrada invalida digite apenas números");
         } catch (Exception e) {
             System.out.println("Erro inesperado: " + e.getMessage());
-        } finally {
-            scanner.close();
         }
     }
 }

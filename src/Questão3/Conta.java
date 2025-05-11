@@ -5,25 +5,25 @@ public abstract class Conta {
 
     public Conta(double saldo) throws ValorInvalidoException {
         if (saldo < 0) {
-            throw new ValorInvalidoException("Saldo inicial não pode ser negativo.");
+            throw new ValorInvalidoException("Saldo inicial não pode ser negativo");
         }
         this.saldo = saldo;
     }
 
     public void Sacar(double valor) throws ValorInvalidoException {
         if (valor < 0) {
-            throw new ValorInvalidoException("Valor de saque não pode ser negativo.");
+            throw new ValorInvalidoException("Valor de saque não pode ser negativo");
         }
         if (saldo >= valor) {
             saldo -= valor;
         } else {
-            System.out.println("Saldo insuficiente.");
+            System.out.println("Saldo insuficiente");
         }
     }
 
     public void Depositar(double valor) throws ValorInvalidoException {
         if (valor < 0) {
-            throw new ValorInvalidoException("Valor de depósito não pode ser negativo.");
+            throw new ValorInvalidoException("Valor de depósito não pode ser negativo");
         }
         saldo += valor;
     }
